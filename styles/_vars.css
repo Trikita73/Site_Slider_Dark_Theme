@@ -3,11 +3,17 @@
   --line-height: 1.625;
   --font-family: raleway-d, sans-serif;
 
-  --container: 1140px;
+  --container: 1200px;
   --gutter: 1.25rem;
 
-  --accent: #f99b16;
-  --radius: .5rem;
+  --accent: #AB8B80;
+
+  --active-color: #E7E8ED;
+  --menu-btn-color: #7A7B7F;
+
+  --top-line-height: 70px;
+  --slider-bottom-height: 65px;
+  --slider-padding: 35px;
 }
 
 .light {
