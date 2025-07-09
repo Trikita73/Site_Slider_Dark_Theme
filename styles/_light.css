@@ -5,3 +5,15 @@
 .light .logo {
     background-image: url(../public/images/logo/logo-light.svg);
 }
+
+.light .main-menu a {
+    color: #777;
+}
+
+.light .main-menu li.active a {
+    color: var(--body-color);
+}
+
+.light .icon-font-light::before {
+    content: '\E801';
+}
