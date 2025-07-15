@@ -21,5 +21,25 @@ const swiper = new Swiper('.head-slider', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true
+    },
+    on: {
+        init: function() {
+            updateSliderCounter(this)
+        },
+        slideChange: function() {
+            updateSliderCounter(this)
+        }
     }
 })
+
+function updateSliderCounter(swiperInstance) {
+    const realIndex = swiperInstance.realIndex + 1
+    const totalSlides = swiperInstance.slides.length
+    const counterElement = document.querySelector('.slider-bottom__count .value')
+
+    if(counterElement) {
+        counterElement.textContent = `${realIndex} / ${totalSlides}`
+    } else {
+        console.warn('Элемент .slider-bottom__count .value не найден')
+    }
+}
